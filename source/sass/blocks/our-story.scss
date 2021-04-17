@@ -1,4 +1,6 @@
 .our-story {
+    padding-top: 68px;
+    padding-bottom: 71px;
     display: grid;
     grid-template-columns: 235px 550px;
     column-gap: 100px;
@@ -10,9 +12,6 @@
     // width: 538px;
 }
 .our-story__title {
-    font-family: "Playfair Display";
-    font-weight: 700;
-    font-size: 22px;
     margin-bottom: 31px;
 }
 .our-story__description {
