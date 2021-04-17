@@ -1,0 +1,17 @@
+.title {
+  margin: 0;
+  color: $title-grey-color;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+
+  // @media (min-width: @tablet-width) {
+  //   font-size: 60px;
+  //   line-height: 60px;
+  // }
+}
+
+// font-weight? line-height?
+
