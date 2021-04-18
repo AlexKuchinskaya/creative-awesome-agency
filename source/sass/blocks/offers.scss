@@ -1,0 +1,49 @@
+.offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+}
+
+.offers__item {
+    // max-width: 320px;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid $offer-border-grey;
+    padding-top: 38px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &:nth-child(3n+2) {
+        border: 1px solid $offer-border-grey;
+        border-top: none;
+      }
+    &:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+}
+
+.offers__title {
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    color: $expertise-grey;
+}
+
+.offers__info {
+    width: 252px;
+    margin: 0;
+}
+.WEB_DESIGN___DEVELOPMENT {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: $expertise-grey;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    left: 320.767px;
+    top: 1923.25px;
+    width: 213px;
+    height: 10px;
+    z-index: 306;
+  }
+  

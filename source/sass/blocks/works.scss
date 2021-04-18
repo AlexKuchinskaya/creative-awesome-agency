@@ -1,0 +1,48 @@
+.works__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    margin-bottom: 70px;
+}
+
+.works__link {
+    display: inline-block;
+    position: relative;
+    color: $expertise-grey;
+    line-height: 1.2;
+    vertical-align: middle;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: 50%;
+        display: block;
+        transform: translate(0, -50%);
+        width: 8px;
+        height: 13px;
+        background: url(../img/work-link-arrow.png);
+        background-repeat: no-repeat;
+        
+    }
+}
+
+.works__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 70px;
+}
+
+.works__item {
+    box-sizing: border-box;
+    min-height: 200px;
+}
+
+.works__poster {
+    width: 267px;
+    height: 200px;
+}

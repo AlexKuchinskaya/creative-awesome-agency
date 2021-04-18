@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome Creative Agency</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.min.css">
     <link rel="preload" href="/fonts/playfair-display-v22-latin-regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="/fonts/roboto-v27-latin-regular.woff2" as="font" crossorigin="anonymous">
 </head>
@@ -17,11 +17,7 @@
     <div class="page-background">
         <header class="container-site page-header">
             <a class="page-header__logo">
-                 <span>tajam</span>
-                <!-- <picture>
-                    <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"><img src="img/logo-mobile.svg" width="191" height="38" alt="Магазин «Кэт энерджи»">
-                </picture> -->
+                 <img src="img/icon-header-logo.png" width="128" height="50" alt="Logo Awesome Creative Agency">
             </a>
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button">
@@ -76,49 +72,86 @@
         </section>
         <section class="video-agency">
             <h2 class="visually-hidden">Our video</h2>
-            <button></button>
+            <button class="video-agency__button">
+                <!-- <img src="img/icon-play.png" width="100" height="100" alt="Play video button"> -->
+            </button>
+            <span class="video-agency__label">WATCH OUR STORY</span>
         </section>
-        <section>
-            <h2>EXPERTISE</h2>
-            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-        </section>
-        <section>
-            <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x ">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
-        <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x"> --> 
-          <span>WATCH OUR STORY</span>
-        </section>
-        <section>
-            <h2>EXPERTISE</h2>
-            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-            <div>
-                <div class="reason-item reason-item-white reason-item-accommodation">
-                    <h3>WEB DESIGN & DEVELOPMENT</h3>
-                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh</p>
+        <section class="expertise">
+            <h2 class="title expertise__title">EXPERTISE</h2>
+            <p class="expertise__description">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+            <div class="expertise__content offers">
+                <div class="offers__item">
+                    <h3 class="title offers__title">WEB DESIGN & DEVELOPMENT</h3>
+                    <img class="our-story__picture" src="img/icon-web-design.png" width="49" height="50" alt="WEB DESIGN & DEVELOPMENT">
+                    <p class="offers__info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
                 </div>
-                <div class="reason-item reason-item-white reason-item-accommodation">
-                    <h3>BRANDING IDENTITY</h3>
-                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh</p>
+                <div class="offers__item">
+                    <h3 class="title offers__title">BRANDING IDENTITY</h3>
+                    <p class="offers__info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
                 </div>
-                <div class="reason-item reason-item-white reason-item-accommodation">
-                    <h3>MOBILE APP</h3>
-                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh</p>
+                <div class="offers__item">
+                    <h3 class="title offers__title">MOBILE APP</h3>
+                    <p class="offers__info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
                 </div>
-                <div class="reason-item reason-item-white reason-item-accommodation">
-                    <h3>SEARCH ENGINE OPTIMIZATION</h3>
-                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh</p>
+                <div class="offers__item">
+                    <h3 class="title offers__title">SEARCH ENGINE OPTIMIZATION</h3>
+                    <p class="offers__info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
                 </div>
-                <div class="reason-item reason-item-white reason-item-accommodation">
-                    <h3>GAME DEVELOPMENT</h3>
-                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh</p>
+                <div class="offers__item">
+                    <h3 class="title offers__title">GAME DEVELOPMENT</h3>
+                    <p class="offers__info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
                 </div>
-                <div class="reason-item reason-item-white reason-item-accommodation">
-                    <h3>MADE WITH LOVE</h3>
-                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh</p>
+                <div class="offers__item">
+                    <h3 class="title offers__title">MADE WITH LOVE</h3>
+                    <p class="offers__info">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
                 </div>
             </div>
+        </section>
+        <section class="works">
+            <div class="works__wrapper">
+                <h2 class="title works__title">OUR WORKS</h3>
+                <a class="works__link" href="#">See All Project in dribbble</a>
+            </div>
+            <ul class="list works__list">
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-1.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-2.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-3.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-4.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-5.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-6.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-7.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-8.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-9.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-10.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-11.png" width="267" height="200" alt="Our work poster">
+                </li>
+                <li class="works__item">
+                    <img class="works__poster" src="img/works-12.png" width="267" height="200" alt="Our work poster">
+                </li>
+            </ul>
+            <button class="link-more">Load more</button>
         </section>
         <section>
             <h2>GIVE US A GOOD NEWS</h2>
