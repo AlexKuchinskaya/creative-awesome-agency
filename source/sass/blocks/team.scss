@@ -1,0 +1,49 @@
+.team {
+    background-image: url(../img/team-bg.jpg);
+    background-color: $basic-violet;
+    background-size: cover;
+    text-align: center;
+    min-height: 712px;
+}
+
+.team__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 72px;
+}
+
+.team__title {
+    color: $basic-white;
+    margin-bottom: 16px;
+}
+
+.team__introduction {
+    margin: 0;
+    color: $team-color-white;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    letter-spacing: 1.05px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        background-color: $basic-white;
+        opacity: 0.2;
+        left: 50%;
+        top: 32px;
+        transform: translate(-50%, -50%);
+      }
+}
+
+.team__join {
+    margin-top: 70px;
+    color: $team-join-white;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+}
+
+  

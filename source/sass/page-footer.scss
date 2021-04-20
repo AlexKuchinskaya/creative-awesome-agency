@@ -1,0 +1,34 @@
+.page-footer {
+    // width: 100%;
+    background: url(../img/footer-background.jpg);
+    background-color: $basic-violet;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    // background-size: auto 100%;
+    // background-position: top center;
+}
+
+.page-footer__wrapper {
+    box-sizing: border-box;
+    padding-top: 90px;
+    width: 960px;
+    margin: 0 auto;
+    color: $basic-white;
+}
+
+.page-footer__container {
+    display: flex;
+    // justify-content: space-between;
+}
+
+.page-footer__agency, .page-footer__contacts, .page-footer__social  {
+    width: 33.3%;
+}
+
+.page-footer__rights {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}

@@ -1,0 +1,41 @@
+.footer-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.footer-form__email {
+    text-align: center;
+    padding: 0;
+    min-height: 45px;
+    font-family: inherit;
+    border: 1px solid $newsteller-grey;
+    background: transparent;
+    min-width: 65%;
+    // padding-left: 16px;
+    color: rgba(255, 255, 255, 0.749);
+    line-height: 1.857;
+    margin-right: 10px;
+}
+
+.footer-form__button {
+    display: block;
+    position: relative;
+    padding: 0;
+    min-height: 45px;
+    width: 70px;
+    background: rgba(154, 146, 171, 0.7);
+    border: none;
+
+    &::after {
+        position: absolute;
+        content: url(../img/icon-newsteller.png);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+    }
+}
+  

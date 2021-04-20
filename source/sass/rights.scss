@@ -1,0 +1,21 @@
+.rights__navigation {
+    display: flex;
+}
+
+.rights__item {
+    margin-right: 25px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.rights__link {
+    line-height: 1.857;
+    font-size: 14px;
+}
+
+.rights__copyright {
+    display: block;
+}
+
+  
