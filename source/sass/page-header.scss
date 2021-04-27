@@ -4,14 +4,15 @@
     border: none;
     position: relative;
     min-height: 55px;
+    box-sizing: border-box;
   
-    // @media (max-width: @mobile-width-only) {
-    //   width: auto;
-    //   margin: 0;
-    //   padding-top: 12px;
-    //   padding-left: 0;
-    //   padding-right: 0;
-    // }
+    @media (max-width: $iphone-6-8-plump-landscape-width) {
+      width: auto;
+      margin: 0;
+      padding-top: 12px;
+      padding-left: 0;
+      padding-right: 0;
+    }
   
     // @media (min-width: @tablet-width) {
     //   justify-content: space-between;
@@ -20,8 +21,9 @@
     // }
   
     @media (min-width: $ipad-landscape-width) {
-      padding-top: 35px;
+      padding-top: 15px;
       margin-bottom: 0;
+      justify-content: space-between;
     }
   
     // &--mobile {
@@ -57,8 +59,7 @@
   
   .page-header__logo {
     display: block;
-    margin: 0 auto;
-    transform: translateX(-45px);
+    // margin: 0 auto;
   
     // @media (min-width: @tablet-width) {
     //   padding: 0;

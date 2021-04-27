@@ -11,7 +11,13 @@
     border-radius: 2px;
     padding: 16px 12px;
     font-weight: 700;
-    max-width: 121px;
+    width: 121px;
+
+
+    &--big {
+        width: 140px;
+    }
 }
+
 
   

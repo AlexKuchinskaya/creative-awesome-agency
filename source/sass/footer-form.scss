@@ -5,13 +5,14 @@
 }
 
 .footer-form__email {
+    box-sizing: border-box;
     text-align: center;
     padding: 0;
     min-height: 45px;
     font-family: inherit;
     border: 1px solid $newsteller-grey;
     background: transparent;
-    min-width: 65%;
+    min-width: 72%;
     // padding-left: 16px;
     color: rgba(255, 255, 255, 0.749);
     line-height: 1.857;

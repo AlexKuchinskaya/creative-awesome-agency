@@ -1,16 +1,50 @@
 .our-story {
+    padding: 0 20px;
     padding-top: 68px;
     padding-bottom: 71px;
-    display: grid;
-    grid-template-columns: 235px 550px;
-    column-gap: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: center;
+    @media (min-width: $iphone-6-8-plump-landscape-width) {
+        justify-content: space-between;
+      }
+}
+
+.our-story__wrap {
+    box-sizing: border-box;
+    width: 100%;
+    
+    // width: 538px;
+    &--picture {
+        @media (max-width: $iphone-6-8-plump-landscape-width) {
+            // width: 300px;
+            // text-align: center;
+            min-height: 239px;
+            margin-bottom: 40px;   
+        }
+        @media (min-width: 737px) {
+            width: 41%;
+        }
+    }
+    &--text {
+        @media (min-width: 737px) {
+            width: 58%;
+        }
+    }       
 }
 .our-story__picture {
-    display: inline-block;
+    display: block;
+    width: 235px;
+    height: 239px;
+    margin: 0 auto;
+    @media (min-width: $iphone-6-8-plump-landscape-width) {
+        // margin: 0;
+        // justify-content: space-between;
+      }
 }
-.our-story__wrap {
-    // width: 538px;
-}
+
 .our-story__title {
     margin-bottom: 31px;
 }

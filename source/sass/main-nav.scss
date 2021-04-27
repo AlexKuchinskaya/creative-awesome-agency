@@ -1,0 +1,104 @@
+.main-nav {
+    &--opened {
+      width: 100%;
+    }
+  
+    &--nojs {
+      @media (max-width: $iphone-6-8-plump-landscape-width) {
+        width: 100%;
+      }
+    }
+  }
+  
+  .main-nav__toggle {
+    @media (max-width: $iphone-6-8-plump-landscape-width) {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    z-index: 2;
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    }
+  
+  }
+  
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $basic-white;
+    box-shadow: 0 7px 0 0 $basic-white, 0 14px 0 0 $basic-white;
+  }
+  
+  .main-nav--closed .main-nav__wrapper {
+    @media (max-width: $iphone-6-8-plump-landscape-width) {
+      display: none;
+    }
+  }
+  
+  .main-nav--opened .main-nav__toggle {
+    top: 20px;
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: 24px;
+      height: 1.5px;
+      background-color: $basic-white;
+    }
+  
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+  
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+  
+  .main-nav--opened .main-nav__wrapper {
+    @media (max-width: $iphone-6-8-plump-landscape-width) {
+      margin-top: 13px;
+      width: 100%;
+    }
+  }
+  
+  .main-nav--opened a,
+  .main-nav--nojs a {
+    @media (max-width: $iphone-6-8-plump-landscape-width) {
+      text-align: center;
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
+  }
+  
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+  
+  .main-nav--nojs .main-nav__wrapper {
+    @media (max-width: $iphone-6-8-plump-landscape-width) {
+      display: block;
+      margin-top: 13px;
+    }
+  }
+  
+  .main-nav__wrapper {
+    @media (min-width: $ipad-portrait-width) {
+      width: 478px;
+    }
+  }
+  

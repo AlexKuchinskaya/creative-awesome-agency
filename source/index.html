@@ -19,7 +19,7 @@
             <a class="page-header__logo">
                  <img src="img/icon-header-logo.png" width="128" height="50" alt="Logo Awesome Creative Agency">
             </a>
-            <nav class="main-nav">
+            <nav class="main-nav main-nav--closed main-nav--nojs">
                 <button class="main-nav__toggle" type="button">
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
@@ -60,10 +60,10 @@
     </div>    
         <section class="our-story container-site">
             <h2 class="visually-hidden">OUR STORY</h2>
-            <div class="our-sstory__wrap"> 
+            <div class="our-story__wrap our-story__wrap--picture"> 
               <img class="our-story__picture" src="img/logo-our-story.png" width="235" height="239" alt="Awesome Creative Agency">
             </div>
-            <div class="our-story__wrap">
+            <div class="our-story__wrap our-story__wrap--text">
               <h3 class="title our-story__title">Our Story</h2>
               <p class="our-story__description">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
               <p class="our-story__description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -78,6 +78,7 @@
             <span class="video-agency__label">WATCH OUR STORY</span>
         </section>
         <section class="expertise">
+            <div class="expertise__container"></div>
             <h2 class="title expertise__title">EXPERTISE</h2>
             <p class="expertise__description">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
             <div class="expertise__content offers">
@@ -135,7 +136,7 @@
                     </div> -->
                 </div>
                 <p class = "team__join">Become part of our dream team, let’s join us!</p>
-                <button type="button" class="link-more button"> WE ARE HIRING</button>
+                <button type="button" class="button link-more link-more--big"> WE ARE HIRING</button>
             </div>
         </section>
         <section class="works">
@@ -188,9 +189,8 @@
                 <p class="testimonials__feedback">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
                 <span class="testimonials__name">Jane Galadriel</span>
                 <span class="testimonials__position">CEO Tengkurep</span>
-            </div>
-            <div class="testimonials__slider">
-
+                <div class="testimonials__slider">
+                </div>
             </div>
         </section>
         <section class="review">
@@ -274,6 +274,7 @@
                 </div>
             </div>
         </footer>
+        <!-- <script src="js/mobile.js"></script> -->
     </main>
 </body>
 

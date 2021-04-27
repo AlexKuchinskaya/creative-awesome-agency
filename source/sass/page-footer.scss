@@ -4,31 +4,48 @@
     background-color: $basic-violet;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 400px;
+    // min-height: 400px;
     // background-size: auto 100%;
     // background-position: top center;
 }
 
 .page-footer__wrapper {
     box-sizing: border-box;
-    padding-top: 90px;
-    width: 960px;
+    padding: 70px 20px 65px;
+    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
     color: $basic-white;
 }
 
 .page-footer__container {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .page-footer__agency, .page-footer__contacts, .page-footer__social  {
-    width: 33.3%;
+    width: 100%;
+
+    @media (min-width: $ipad-landscape-width) {
+        width: 33.1%;
+        box-sizing: border-box;
+    }
 }
 
+.page-footer__contacts {
+    padding-top: 13px;
+}
+
+.page-footer__social {
+    padding-left: 10px;
+    padding-top: 13px;
+}
 .page-footer__rights {
     margin-top: 65px;
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 60px;
+    flex-wrap: wrap;
+    @media (min-width: $iphone-6-8-plump-landscape-width) {
+        justify-content: space-between;
+    }
 }

@@ -28,6 +28,9 @@
     padding-bottom: 21px;
     padding-left: 21px;
     outline: 0;
+    &::placeholder {
+        color: rgba(65, 61, 75, 0.502);
+    }
 }
 
 .form__area {

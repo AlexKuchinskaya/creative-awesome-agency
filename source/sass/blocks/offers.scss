@@ -1,25 +1,36 @@
 .offers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    box-sizing: border-box;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    
+    // @media (min-width: $ipad-landscape-width) {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr 1fr;
+    //     box-sizing: border-box;
+    // }
 }
 
 .offers__item {
-    // max-width: 320px;
     box-sizing: border-box;
-    width: 100%;
-    border-bottom: 1px solid $offer-border-grey;
+    width: 80%;
     padding-top: 38px;
     padding-bottom: 40px;
     padding-right: 30px;
     padding-left: 30px;
-
-    &:nth-child(3n+2) {
-        border: 1px solid $offer-border-grey;
-        border-top: none;
-      }
-    &:nth-last-child(-n+3) {
-        border-bottom: none;
+    @media (min-width: $iphone-6-8-landscape-width) {
+        width: 50%;
+    }
+    @media (min-width: $ipad-landscape-width) {
+        width: 33%;
+        border-bottom: 1px solid $offer-border-grey;
+        &:nth-child(3n+2) {
+            border: 1px solid $offer-border-grey;
+            border-top: none;
+          }
+        &:nth-last-child(-n+3) {
+            border-bottom: none;
+        }
     }
 }
 
@@ -30,7 +41,7 @@
 }
 
 .offers__info {
-    width: 252px;
+    // width: 252px;
     margin: 0;
 }
 .WEB_DESIGN___DEVELOPMENT {

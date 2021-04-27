@@ -1,11 +1,13 @@
 .introduction {
     padding-top: 150px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .introduction__title {
     font-size: 32px;
     text-align: center;
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
     margin-bottom: 60px;
     text-transform: none;
@@ -14,12 +16,12 @@
 }
 
 .introduction__description {
-    width: 519px;
-    margin: 0 auto;
+    // width: 519px;
+    // margin: 0 auto;
     font-size: 14px;
     text-align: center;
     line-height: 1.714;
-    width: 714px;
+    max-width: 714px;
     margin-bottom: 50px;
     position: relative;
     color: $basic-white;

@@ -1,5 +1,16 @@
+.rights__navigation, .rights__copyright {
+    margin-bottom: 20px;
+    width: 100%;
+    @media (min-width: $iphone-6-8-plump-landscape-width) {
+        margin-bottom: 0;
+        width: auto;
+    }
+}
 .rights__navigation {
     display: flex;
+    @media (max-width: $iphone-6-8-plump-landscape-width) {
+        width: 100%;
+    }
 }
 
 .rights__item {
