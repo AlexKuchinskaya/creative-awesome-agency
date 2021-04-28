@@ -38,23 +38,17 @@
     font-family: "Roboto", serif;
     font-size: 14px;
     color: $expertise-grey;
+    margin-bottom: 13px;
 }
 
 .offers__info {
     // width: 252px;
     margin: 0;
 }
-.WEB_DESIGN___DEVELOPMENT {
-    font-size: 14px;
-    font-family: "Roboto";
-    color: $expertise-grey;
-    line-height: 1.2;
-    text-align: center;
-    position: absolute;
-    left: 320.767px;
-    top: 1923.25px;
-    width: 213px;
-    height: 10px;
-    z-index: 306;
-  }
-  
+
+.offers__picture {
+    max-width: 50px;
+    min-width: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}

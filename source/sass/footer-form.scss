@@ -17,6 +17,10 @@
     color: rgba(255, 255, 255, 0.749);
     line-height: 1.857;
     margin-right: 10px;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.749);
+    }
 }
 
 .footer-form__button {

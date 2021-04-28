@@ -129,6 +129,10 @@ body {
   color: rgba(255, 255, 255, 0.749);
   line-height: 1.857;
   margin-right: 10px; }
+  .footer-form__email::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.749); }
+  .footer-form__email::placeholder {
+    color: rgba(255, 255, 255, 0.749); }
 
 .footer-form__button {
   display: block;
@@ -468,6 +472,7 @@ body {
   font-weight: 400; }
 
 .introduction__description {
+  margin: 0 auto;
   font-size: 14px;
   text-align: center;
   line-height: 1.714;
@@ -615,23 +620,17 @@ body {
 .offers__title {
   font-family: "Roboto", serif;
   font-size: 14px;
-  color: #413d4b; }
+  color: #413d4b;
+  margin-bottom: 13px; }
 
 .offers__info {
   margin: 0; }
 
-.WEB_DESIGN___DEVELOPMENT {
-  font-size: 14px;
-  font-family: "Roboto";
-  color: #413d4b;
-  line-height: 1.2;
-  text-align: center;
-  position: absolute;
-  left: 320.767px;
-  top: 1923.25px;
-  width: 213px;
-  height: 10px;
-  z-index: 306; }
+.offers__picture {
+  max-width: 50px;
+  min-width: 50px;
+  margin: 0 auto;
+  margin-bottom: 30px; }
 
 .works {
   padding-top: 70px;
