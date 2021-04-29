@@ -7,7 +7,8 @@
   }
 
   @media (min-width: $ipad-landscape-width) {
-    width: 550px;
+    width: auto;
+    justify-content: space-between;
   }
 }
 
