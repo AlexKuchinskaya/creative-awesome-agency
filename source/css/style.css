@@ -562,6 +562,12 @@ body {
   color: #FFFFFF;
   margin: 0 auto; }
 
+.video-agency__popup {
+  display: none; }
+
+.video-agency__popup iframe {
+  z-index: 2; }
+
 .expertise {
   text-align: center;
   color: rgba(51, 51, 51, 0.749);

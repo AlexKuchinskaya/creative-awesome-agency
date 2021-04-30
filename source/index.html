@@ -75,9 +75,17 @@
             </section>
             <section class="video-agency">
                 <h2 class="visually-hidden">Our video</h2>
-                <button class="video-agency__button">
+                <a class="video-agency__button">
                     <!-- <img src="img/icon-play.png" width="100" height="100" alt="Play video button"> -->
-                </button>
+                </a>
+                <div class="video-agency__popup">
+                    <iframe width="320" height="240" id="player" src="https://www.youtube.com/embed/watch?v=KvUgaHTNit4" frameborder="0" allowfullscreen></iframe>
+                    <!-- <video src="https://www.youtube.com/watch?v=KvUgaHTNit4" width="320" height="240" controls>
+                        <source src="https://www.youtube.com/watch?v=KvUgaHTNit4" type="video/mp4">
+                        <source src="https://www.youtube.com/watch?v=KvUgaHTNit4" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video> -->
+                </div>
                 <span class="video-agency__label">WATCH OUR STORY</span>
             </section>
             <section class="expertise">
@@ -284,6 +292,7 @@
             </div>
         </footer>
         <script src="js/mobile.js"></script>
+        <script src="js/button-watch.js"></script>
 </body>
 
 </html>

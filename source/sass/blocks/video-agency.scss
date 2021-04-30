@@ -41,4 +41,10 @@
     margin: 0 auto;
 }
 
-  
+.video-agency__popup {
+    display: none;
+}
+
+.video-agency__popup iframe{
+    z-index: 2;
+}

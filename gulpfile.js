@@ -61,6 +61,15 @@ const html = () => {
 
 exports.html = html
 
+const js = () => {
+  return gulp.src('source/js/**/*.js')
+    // .pipe(posthtml([include()]))
+    // .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build/js'))
+    .pipe(sync.stream())
+}
+
+exports.js = js
 // Server
 
 const server = (done) => {
@@ -82,10 +91,11 @@ exports.server = server
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series('styles'))
   gulp.watch('source/index.html', gulp.series('html'))
+  gulp.watch('source/js/**/*.js', gulp.series('js'))
 }
 
 exports.default = gulp.series(
-  styles, html, server, watcher
+  styles, html, js, server, watcher
 )
 // Clean
 
@@ -99,7 +109,7 @@ const copy = () => {
   return gulp.src([
     'source/fonts/**/*.{ttf,woff2}',
     'source/img/**',
-    'source/js/**/*.js',
+    // 'source/js/**/*.js',
     'source/*.ico'
   ], {
     base: 'source'
@@ -114,7 +124,8 @@ const build = gulp.series(
   copy,
   styles,
   sprite,
-  html
+  html,
+  js
 )
 exports.build = build
 
