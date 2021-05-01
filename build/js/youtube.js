@@ -5,7 +5,7 @@ const popupVideo = document.querySelector('.video-agency__popup');
 const popupClose = document.querySelector('.video-agency__popup-close');
 const youtubePlayer = document.getElementById('player');
 tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementById('1');
+var firstScriptTag = document.getElementById('youtube');
 console.log('firstScriptTag', firstScriptTag)
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 

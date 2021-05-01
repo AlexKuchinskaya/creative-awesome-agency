@@ -1,18 +1,16 @@
 .video-agency {
     width: 100%;
     background: url(../img/video-bg.jpg);
-    height: 550px;
+    // height: 550px;
+    background-size: cover;
     background-color: $basic-violet;
     position: relative;
-    background-size: auto 100%;
+    // background-size: auto 100%;
     background-position: top center;
     background-repeat: no-repeat;
     z-index: 1;
     box-sizing: border-box;
     padding: 199px 0px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // flex-direction: column
 }
 
 .video-agency__button {
@@ -27,6 +25,7 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    cursor: pointer;
 }
 .video-agency__label {
     display: block;
@@ -62,6 +61,7 @@
     right: 8px;
     font-size: 22px;
     border: 1px solid $basic-white;
+    cursor: pointer;
 }
 .video-agency__popup iframe{
     z-index: 2;

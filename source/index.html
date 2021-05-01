@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Awesome Creative Agency</title>
@@ -14,11 +14,11 @@
 </head>
 
 <body class="page">
-    <script id="__bs_script__">
+    <!-- <script id="__bs_script__">
         //<![CDATA[
         document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.14'><\/script>".replace("HOST", location.hostname));
         //]]>
-    </script>
+    </script> -->
     <div class="page-background">
         <header class="container-site page-header">
             <a class="page-header__logo">
@@ -69,8 +69,8 @@
                 <img class="our-story__picture" src="img/logo-our-story.png" width="235" height="239" alt="Awesome Creative Agency">
                 </div>
                 <div class="our-story__wrap our-story__wrap--text">
-                <h3 class="title our-story__title">Our Story</h2>
-                <p class="our-story__description">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+                <h3 class="title our-story__title">Our Story</h3>
+                <p class="our-story__description our-story__description--first">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
                 <p class="our-story__description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                 <a class="link-more" href="#" aria-label="Link to the page with details about the story of the agency">Learn more</a>
                 </div>
@@ -82,8 +82,7 @@
                 </a>
                 <div class="video-agency__popup">
                     <span class="video-agency__popup-close">&times;</span>
-                    <!-- <div id="player"></div> -->
-                    <iframe width="100%" height="100%" id="player" src="https://www.youtube.com/embed/KvUgaHTNit4?enablejsapi=1&version=3" frameborder="0" enablejsapi="1" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" id="player" src="https://www.youtube.com/embed/KvUgaHTNit4?enablejsapi=1&version=3" enablejsapi="1" allowfullscreen></iframe>
                 </div>
                 <span class="video-agency__label">WATCH OUR STORY</span>
             </section>
@@ -156,7 +155,7 @@
             </section>
             <section class="works">
                 <div class="works__wrapper">
-                    <h2 class="title works__title">OUR WORKS</h3>
+                    <h2 class="title works__title">OUR WORKS</h2>
                     <a class="works__link" href="#">See All Project in dribbble</a>
                 </div>
                 <ul class="list works__list">
@@ -200,6 +199,7 @@
                 <button class="link-more button">Load more</button>
             </section>
             <section class="testimonials">
+                <h2 class="visually-hidden">Testimonials</h2>
                 <div class="testimonials__wrapper">
                     <div class="testimonials__slider-big">
                         <div class="testimonials__slide">
@@ -229,11 +229,11 @@
                         </div>
                     </div>
                     <div class="testimonials__slider">
-                        <div class="reviews-sl-min-slide"><img src="img/person-testimonials1.png" width="45" height="45" alt="Photo of Amanda McAdamas"/></div>
-                        <div class="reviews-sl-min-slide"><img src="img/person-testimonials2.png" width="45" height="45" alt="Photo of Jack Sparrow"/></div>
-                        <div class="reviews-sl-min-slide"><img src="img/person-testimonials3.png" width="45" height="45" alt="Photo of Jane Galadriel"/></div>
-                        <div class="reviews-sl-min-slide"><img src="img/person-testimonials4.png" width="45" height="45" alt="Photo of Carmen Sanchez"/></div>
-                        <div class="reviews-sl-min-slide"><img src="img/person-testimonials5.png" width="45" height="45" alt="Photo of Enrique Schwarzwald"/></div>
+                        <div class="testimonials__photo"><img src="img/person-testimonials1.png" width="45" height="45" alt="Photo of Amanda McAdamas"/></div>
+                        <div class="testimonials__photo"><img src="img/person-testimonials2.png" width="45" height="45" alt="Photo of Jack Sparrow"/></div>
+                        <div class="testimonials__photo"><img src="img/person-testimonials3.png" width="45" height="45" alt="Photo of Jane Galadriel"/></div>
+                        <div class="testimonials__photo"><img src="img/person-testimonials4.png" width="45" height="45" alt="Photo of Carmen Sanchez"/></div>
+                        <div class="testimonials__photo"><img src="img/person-testimonials5.png" width="45" height="45" alt="Photo of Enrique Schwarzwald"/></div>
                     </div>
                 </div>
             </section>
@@ -246,7 +246,7 @@
                             <input class="form__input" type="text" name="customer-name" id="name" placeholder="Name" required="">
                         </li>
                         <li class="form__item">
-                            <label for="eimail"></label> 
+                            <label for="customer-email"></label> 
                             <input class="form__input" type="text" name="email" id="customer-email" placeholder="Email" required="">
                         </li>
                         <li class="form__item">
@@ -320,11 +320,10 @@
             </div>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="js/slider.js"></script>
-        <script id="1" src="js/youtube.js"></script>
+        <script  id="youtube" src="js/youtube.js"></script>
         <script src="js/mobile.js"></script>
-        <!-- <script src="js/button-watch.js"></script> -->
 </body>
 
 </html>

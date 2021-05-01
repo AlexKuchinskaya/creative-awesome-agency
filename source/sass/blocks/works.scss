@@ -4,6 +4,7 @@
 }
 
 .works__wrapper {
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -12,6 +13,7 @@
     width: 100%;
     max-width: 960px;
     margin-bottom: 70px;
+    padding: 0 20px;
 }
 
 .works__link {
@@ -40,26 +42,16 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-    // display: grid;
-    // max-width: 960px;
     margin: 0 auto;
     margin-bottom: 70px;
-    // grid-template-columns: 1fr 1fr ;
-    // @media (min-width: $iphone-6-8-landscape-width) {
-    //     grid-template-columns: 1fr 1fr 1fr;
-    // }
     @media (min-width: $ipad-landscape-width) {
-        // max-width: 1600;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
 .works__item {
-    // box-sizing: border-box;
     min-height: 200px;
-    // width: 267px;
 }
 
 .works__poster {

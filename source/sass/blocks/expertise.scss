@@ -1,7 +1,7 @@
 .expertise {
     text-align: center;
     color: $basic-grey;
-    padding: 72px 20px 100px;
+    padding: 64px 20px 100px;
 }
 .expertise__container {
     max-width: 960px;
@@ -16,14 +16,16 @@
   margin-bottom: 10px;
 }
 .expertise__description {
+    font-size: 15px;
     position: relative;
-    width: 401px;
+    max-width: 401px;
     padding: 0;
     margin: 0 auto;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 65px;
+    letter-spacing: 1.05px;
 
     &::before {
         content: "";
@@ -34,6 +36,10 @@
         left: 50%;
         top: 58px;
         transform: translate(-50%, -50%);
+
+        @media (min-width: $iphone-6-8-plump-landscape-width) {
+            top: 35px;
+        }
       }
 }
 
