@@ -1,5 +1,5 @@
 .works {
-    padding-top: 70px;
+    padding-top: 65px;
     padding-bottom: 70px;
 }
 
@@ -11,22 +11,24 @@
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    max-width: 960px;
-    margin-bottom: 70px;
+    max-width: 980px;
+    margin-bottom: 65px;
     padding: 0 20px;
 }
 
 .works__link {
+    cursor: pointer;
     display: inline-block;
     position: relative;
     color: $expertise-grey;
-    line-height: 1.2;
+    letter-spacing: .7;
     vertical-align: middle;
+    min-width: 185px;
 
     &::after {
         content: "";
         position: absolute;
-        right: -15px;
+        right: 0;
         top: 50%;
         display: block;
         transform: translate(0, -50%);
@@ -58,4 +60,8 @@
     width: 267px;
     height: 200px;
     display: block;
+}
+
+.works__title {
+    letter-spacing: 0;
 }

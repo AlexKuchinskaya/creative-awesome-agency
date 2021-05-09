@@ -3,12 +3,6 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    
-    // @media (min-width: $ipad-landscape-width) {
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr 1fr;
-    //     box-sizing: border-box;
-    // }
 }
 
 .offers__item {
@@ -16,13 +10,13 @@
     width: 80%;
     padding-top: 38px;
     padding-bottom: 40px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 33px;
+    padding-left: 33px;
     @media (min-width: $iphone-6-8-landscape-width) {
         width: 50%;
     }
     @media (min-width: $ipad-landscape-width) {
-        width: 33%;
+        max-width: 33%;
         border-bottom: 1px solid $offer-border-grey;
         &:nth-child(3n+2) {
             border: 1px solid $offer-border-grey;
@@ -39,10 +33,12 @@
     font-size: 14px;
     color: $expertise-grey;
     margin-bottom: 13px;
+    letter-spacing: 0;
 }
 
 .offers__info {
-    // width: 252px;
+    font-weight: 300;
+    line-height: 22px;
     margin: 0;
 }
 
@@ -50,5 +46,5 @@
     max-width: 50px;
     min-width: 50px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }

@@ -3,19 +3,20 @@
     background: url(../img/footer-background.jpg);
     background-color: $basic-violet;
     background-repeat: no-repeat;
-    background-size: cover;
-    // min-height: 400px;
-    // background-size: auto 100%;
-    // background-position: top center;
+    // background-size: cover;
+    min-height: 400px;
 }
 
 .page-footer__wrapper {
     box-sizing: border-box;
-    padding: 70px 20px 65px;
+    padding: 70px 20px 0;
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
     color: $basic-white;
+    @media (min-width: $iphone-6-8-plump-landscape-width) {
+        padding: 70px 11px 0;
+    }
 }
 
 .page-footer__container {

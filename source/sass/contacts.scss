@@ -1,5 +1,5 @@
 .contacts__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: $basic-white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -10,16 +10,18 @@
 .contacts__adress {
     padding-left: 30px;
     margin: 0;
-    margin-bottom: 26px;
+    margin-bottom: 12px;
     position: relative;
     box-sizing: border-box;
-    width: 82%;
+    width: 91%;
+    line-height: 26px;
+    letter-spacing: .35px;
 
     &::after {
         position: absolute;
         content: url(../img/icon-pin-map.png);
         top: 0;
-        left: 0;
+        left: 5px;
         display: inline-block;
         height: 19px;
     }
@@ -30,12 +32,14 @@
     color: $basic-white;
     display: inline-block;
     position: relative;
+    line-height: 26px;
+    letter-spacing: .35px;
 
     &::after {
         position: absolute;
         content: url(../img/icon-phone.png);
         top: 0;
-        left: 0;
+        left: 5px;
         display: inline-block;
         height: 19px;
     }
