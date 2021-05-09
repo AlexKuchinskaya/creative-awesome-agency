@@ -6,17 +6,18 @@
     width: 78%;
 }
 .social__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: $basic-white;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 900;
     line-height: 26px;
+    letter-spacing: 0;
 }
 
 .social__item {
     width: 35px;
-    margin-right: 10px;
+    margin-right: 8px;
     &:last-child {
         margin-right: 0;
     }

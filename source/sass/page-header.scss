@@ -1,5 +1,5 @@
 .page-header {
-    max-width: 960px;
+    max-width: 980px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -8,90 +8,27 @@
     position: relative;
     min-height: 55px;
     box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 12px;
-  
-    @media (max-width: $iphone-6-8-plump-landscape-width) {
-      width: auto;
-      margin: 0;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  
-    // @media (min-width: @tablet-width) {
-    //   justify-content: space-between;
-    //   margin-bottom: 56px;
-    //   padding-top: 24px;
-    // }
   
     @media (min-width: $ipad-landscape-width) {
       padding-top: 15px;
+      padding-right: 20px;
+      padding-left: 10px;
       margin-bottom: 0;
       justify-content: space-between;
     }
+  }  
+
   
-    // &--mobile {
-    //   @media (max-width: @mobile-width-only) {
-    //     border-bottom: 1px solid @mobile-border-grey;
-    //   }
-    // }
-  
-    // &--form {
-    //   @media (max-width: @mobile-width-only) {
-    //     padding-top: 14px;
-    //   }
-  
-    //   @media (min-width: @tablet-width) {
-    //     margin-bottom: 70px;
-    //   }
-  
-    //   @media (min-width: @desktop-width) {
-    //     margin-bottom: 87px;
-    //   }
-    // }
-  
-    // &--catalog {
-    //   @media (min-width: @tablet-width) {
-    //     margin-bottom: 70px;
-    //   }
-  
-    //   @media (min-width: @desktop-width) {
-    //     margin-bottom: 87px;
-    //   }
-    // }
+.page-header__logo img {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
   }
-  
-  .page-header__logo {
-    display: block;
-    // margin: 0 auto;
-  
-    // @media (min-width: @tablet-width) {
-    //   padding: 0;
-    //   height: 59px;
-    //   margin: 0;
-    //   transform: translateX(0);
-    // }
+
+  &:active {
+    opacity: 0.6;
   }
-  
-  .page-header__logo img {
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
-  
-    &:active {
-      opacity: 0.6;
-    }
-  
-    // @media (min-width: @tablet-width) {
-    //   display: block;
-    //   width: 174px;
-    //   height: 52px;
-    // }
-  
-    // @media (min-width: @desktop-width) {
-    //   width: 202px;
-    //   height: 59px;
-    //   left: -280px;
-    //   transform: translateX(0);
-    // }
-  }
+}

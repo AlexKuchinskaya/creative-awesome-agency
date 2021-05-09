@@ -7,6 +7,7 @@
     }
 }
 .rights__navigation {
+    box-sizing: border-box;
     display: flex;
     @media (max-width: $iphone-6-8-plump-landscape-width) {
         width: 100%;
@@ -14,19 +15,21 @@
 }
 
 .rights__item {
-    margin-right: 25px;
+    margin-right: 31px;
     &:last-child {
         margin-right: 0;
     }
 }
 
 .rights__link {
-    line-height: 1.857;
     font-size: 14px;
+    padding-top: 0;
+    line-height: 26px;
 }
 
 .rights__copyright {
-    display: block;
+    display: block; 
+    letter-spacing: 0.4px;
 }
 
   

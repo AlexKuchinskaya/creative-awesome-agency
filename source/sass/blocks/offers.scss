@@ -26,6 +26,10 @@
             border-bottom: none;
         }
     }
+
+    &--mobile {
+        padding-top: 30px;
+    }
 }
 
 .offers__title {
@@ -44,7 +48,6 @@
 
 .offers__picture {
     max-width: 50px;
-    min-width: 50px;
     margin: 0 auto;
     margin-bottom: 31px;
 }

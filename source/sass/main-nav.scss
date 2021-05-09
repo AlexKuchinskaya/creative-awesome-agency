@@ -1,4 +1,5 @@
 .main-nav {
+    max-width: 540px;
     &--opened {
       width: 100%;
     }
@@ -11,7 +12,6 @@
   }
   
   .main-nav__toggle {
-    
     margin: 0;
     padding: 0;
     position: absolute;

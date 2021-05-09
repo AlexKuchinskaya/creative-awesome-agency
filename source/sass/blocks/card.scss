@@ -1,0 +1,33 @@
+.card__items {
+    width: 100%;
+    max-width: 220px;
+}
+
+.card__photo {
+    width: 220px;
+    height: 229px;
+}
+
+.card__info-container {
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    opacity: .5;
+}
+
+.card__member {
+    color: $basic-white;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card__position {
+    color: $basic-white;
+    opacity: 0.702;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+  
+  

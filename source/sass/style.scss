@@ -1,4 +1,4 @@
-// @import "fonts.less";
+@import "fonts.scss";
 @import "variables.scss";
 @import "global.scss";
 @import "blocks/title.scss";
@@ -28,5 +28,6 @@
 @import "blocks/form.scss";
 @import "blocks/testimonials.scss";
 @import "blocks/team.scss";
+@import "blocks/card.scss"
 
   
