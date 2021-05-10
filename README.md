@@ -26,8 +26,8 @@ Creative Awesome Agency был написан с использованием в
 Чтобы добиться этой адаптивности, были применены flexboxes и grid-сетки.
 
 Некоторые другие отличительные особенности проекта:
-- Всплывающее видео, было реализовано с помощью[YouTube Player API] (https://developers.google.com/youtube/iframe_api_reference);
-- использование [Плагин Slick] (https://kenwheeler.github.io/slick/) для создания слайдера для блока отзывов;
+- Всплывающее видео, было реализовано с помощью [YouTube Player API](https://developers.google.com/youtube/iframe_api_reference);
+- использование [Плагин Slick](https://kenwheeler.github.io/slick/) для создания слайдера для блока отзывов;
 - Иконки в блоке «Экспертиза» были склеены в png-спрайт.
 - Хорошие практики с точки зрения доступности, SEO, производительности. Например, по сайту можно полностью перемещаться с помощью кнопки «Tab».
 
