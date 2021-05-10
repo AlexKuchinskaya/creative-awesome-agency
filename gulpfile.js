@@ -16,7 +16,7 @@ const spritesmith = require('gulp.spritesmith');
 const minify = require('gulp-minify');
  
 const sprite = () => {
-  return gulp.src('source/img/sprite-png/*.png')
+  return gulp.src('img/sprite-png/*.png')
     .pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.css'
@@ -27,19 +27,19 @@ const sprite = () => {
 exports.sprite = sprite
 
 const images = () => {
-  return gulp.src("source/img/*.{jpg,png,svg}")
+  return gulp.src("img/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.jpegtran({ progressive: true }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("img"))
 }
 
 exports.images = images;
 
 const styles = () => {
-  return gulp.src('source/sass/style.scss')
+  return gulp.src('sass/style.scss')
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -47,12 +47,12 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(gulp.dest('build/css'))
-    .pipe(gulp.dest('source/css'))
+    .pipe(gulp.dest('css'))
     .pipe(csso())
     .pipe(rename('styles.min.css'))
     .pipe(sourcemap.write('.'))
     .pipe(gulp.dest('build/css'))
-    .pipe(gulp.dest('source/css'))
+    .pipe(gulp.dest('css'))
     .pipe(sync.stream())
 }
 
@@ -61,8 +61,7 @@ exports.styles = styles
 // HTML
 
 const html = () => {
-  return gulp.src('source/index.html')
-    .pipe(rename('index.html'))
+  return gulp.src('index.html')
     .pipe(posthtml([include()]))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build/'))
@@ -74,10 +73,10 @@ exports.html = html
 // JS
 
 const js = () => {
-  return gulp.src('source/js/**/*.js')
+  return gulp.src('js/**/*.js')
     .pipe(minify())
     .pipe(gulp.dest('build/js'))
-    .pipe(gulp.dest('source/js'))
+    .pipe(gulp.dest('js'))
     .pipe(sync.stream())
 }
 
@@ -102,9 +101,9 @@ exports.server = server
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series('styles'))
-  gulp.watch('source/index.html', gulp.series('html'))
-  gulp.watch('source/js/**/*.js', gulp.series('js'))
+  gulp.watch('sass/**/*.scss', gulp.series('styles'))
+  gulp.watch('index.html', gulp.series('html'))
+  gulp.watch('js/**/*.js', gulp.series('js'))
 }
 
 exports.default = gulp.series(
@@ -121,11 +120,11 @@ exports.clean = clean
 
 const copy = () => {
   return gulp.src([
-    'source/fonts/**/*.{ttf,woff2}',
-    'source/img/**',
-    'source/*.ico'
+    'fonts/**/*.{ttf,woff2}',
+    'img/**',
+    '*.ico'
   ], {
-    base: 'source'
+    base: './'
   })
     .pipe(gulp.dest('build'))
 }
