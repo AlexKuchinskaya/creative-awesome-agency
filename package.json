@@ -27,6 +27,7 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-minify": "^3.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.0",
     "gulp-posthtml": "^3.0.5",
@@ -36,6 +37,7 @@
     "posthtml-include": "^1.7.0"
   },
   "dependencies": {
+    "gulp-imagemin": "^7.1.0",
     "gulp.spritesmith": "^6.11.0",
     "pug": "^3.0.2",
     "sass": "^1.32.8"

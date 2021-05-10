@@ -1,6 +1,6 @@
 .our-story {
     padding: 0 20px;
-    padding-top: 68px;
+    padding-top: 64px;
     padding-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
@@ -18,8 +18,6 @@
     
     &--picture {
         @media (max-width: $iphone-6-8-plump-landscape-width) {
-            // width: 300px;
-            // text-align: center;
             min-height: 239px;
             margin-bottom: 40px;   
         }
@@ -29,7 +27,7 @@
     }
     &--text {
         @media (min-width: 737px) {
-            width: 58%;
+            width: 57%;
         }
     }       
 }
@@ -38,10 +36,6 @@
     width: 235px;
     height: 239px;
     margin: 0 auto;
-    @media (min-width: $iphone-6-8-plump-landscape-width) {
-        // margin: 0;
-        // justify-content: space-between;
-      }
 }
 
 .our-story__title {
@@ -53,9 +47,7 @@
     letter-spacing: .42px;
     font-weight: 300;
     line-height: 22px;
-    // width: 540px;
-    margin-bottom: 22px;
-    // line-height: 22px;
+    margin-bottom: 23px;
     box-sizing: border-box;
 };
 

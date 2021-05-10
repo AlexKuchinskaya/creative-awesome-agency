@@ -13,9 +13,8 @@
     border: 1px solid $newsteller-grey;
     background: transparent;
     min-width: 72%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     color: rgba(255, 255, 255, 0.749);
-    line-height: 1.857;
     margin-right: 10px;
     font-size: 14px;
     line-height: 26px;
@@ -23,7 +22,7 @@
     &::placeholder {
         color: rgba(255, 255, 255, 0.749);
         letter-spacing: 0.8;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 }
 

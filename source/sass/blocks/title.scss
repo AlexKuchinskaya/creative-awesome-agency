@@ -1,18 +1,11 @@
 .title {
   margin: 0;
   color: $title-grey-color;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Arial", serif;
   text-transform: uppercase;
   font-size: 22px;
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: 1.1px;
 
-  // @media (min-width: @tablet-width) {
-  //   font-size: 60px;
-  //   line-height: 60px;
-  // }
 }
-
-// font-weight? line-height?
-

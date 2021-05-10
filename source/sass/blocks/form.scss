@@ -18,8 +18,8 @@
     box-sizing: border-box;
     border: 1px solid $border-form-grey;
     font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    color: rgba(65, 61, 75, 0.502);
+    font-family: "Roboto", "Arial", sans-serif;
+    color: $form-letter-grey;
     line-height: 1.2;
 }
 .form__input {
@@ -31,7 +31,7 @@
     padding-left: 21px;
     outline: 0;
     &::placeholder {
-        color: rgba(65, 61, 75, 0.502);
+        color: $form-letter-grey;
     }
 }
 

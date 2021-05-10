@@ -7,24 +7,31 @@
 }
 
 .team__wrapper {
-    max-width: 960px;
+    box-sizing: border-box;
+    max-width: 980px;
     margin: 0 auto;
-    padding: 65px 20px 0;
+    padding: 64px 20px 50px;
+
+    @media (min-width:  $ipad-landscape-width) {
+        padding-bottom: 0;
+    }
 }
 
 .team__title {
     color: $basic-white;
     margin-bottom: 10px;
+    letter-spacing: 1.4px;
 }
 
 .team__introduction {
     margin: 0;
     color: $team-color-white;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', "Arial", serif;
     font-size: 14px;
     font-weight: 400;
     position: relative;
     letter-spacing: 1.05px;
+    margin-bottom: 63px;
 
     &::before {
         content: "";
@@ -41,16 +48,26 @@
 
 .team__join {
     margin: 0;
-    margin-top: 70px;
-    margin-bottom: 28px;
+    margin-top: 59px;
+    margin-bottom: 24px;
     color: $team-join-white;
     font-weight: 300;
     letter-spacing: 0.7px;
 }
 
 .team__container {
+    box-sizing: border-box;
     width: 100%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 69px;
+
+    @media (min-width: $iphone-6-8-landscape-width) {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $ipad-landscape-width) {
+        max-width: 100%;
+    }
 }

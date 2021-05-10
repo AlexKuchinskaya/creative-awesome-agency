@@ -1,4 +1,5 @@
 .link-more {
+    box-sizing: border-box;
     display: block;
     color: $basic-link;
     font-family: "Playfair Display", "Arial", serif;
@@ -10,6 +11,7 @@
     padding: 13px 10px;
     font-weight: 700;
     width: 121px;
+    cursor: pointer;
 
 
     &--big {

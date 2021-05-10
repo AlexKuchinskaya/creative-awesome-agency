@@ -10,14 +10,15 @@
     box-sizing: border-box;
     max-width: 960px;
     margin: 0 auto;
-    padding: 122px 20px 70px; 
+    padding: 129px 20px 70px;
+    font-family: 'Playfair Display', "Arial", serif;
+
 
     &::before {
         content: "“";
-        font-family: 'Roboto', serif ;
-        // font-family: 'Playfair Display', serif;
         display: block;
         position: absolute;
+        font: inherit;
         font-size: 86px;
         font-weight: 400;
         opacity: 0.902;
@@ -34,15 +35,15 @@
     margin: 0;
     opacity: 0.851;
     color: $basic-white;
-    font-family: 'Playfair Display', serif;
+    font: inherit;
     font-weight: 400;
     text-align: center;
     font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 1.1px;
     max-width: 780px;
     margin: 0 auto;
     margin-bottom: 43px;
+    line-height: 26px;
+    letter-spacing: .4px;
 
 }
   
@@ -50,20 +51,19 @@
     display: block;
     text-align: center;
     color: $basic-white;
-    font-family: 'Roboto', sans-serif;
+    font: inherit;
+    text-transform: uppercase;
 }
 
 .testimonials__name {
     font-size: 14px;
     font-weight: 400;
-    text-transform: uppercase;
 }
 
 .testimonials__position {
     opacity: 0.7;
     font-size: 13px;
     font-weight: 300;
-    text-transform: uppercase;
 }
 
 .testimonials__slider {

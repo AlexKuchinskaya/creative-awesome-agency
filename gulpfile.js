@@ -7,14 +7,13 @@ const autoprefixer = require('autoprefixer')
 const sync = require('browser-sync').create()
 const csso = require('gulp-csso')
 const rename = require('gulp-rename')
-// const imagemin = require('gulp-imagemin')
-// const webp = require('gulp-webp')
-// const svgstore = require('gulp-svgstore')
+const imagemin = require('gulp-imagemin')
 const del = require('del')
 const posthtml = require('gulp-posthtml')
 const include = require('posthtml-include')
 const htmlmin = require('gulp-htmlmin')
 const spritesmith = require('gulp.spritesmith');
+const minify = require('gulp-minify');
  
 const sprite = () => {
   return gulp.src('source/img/sprite-png/*.png')
@@ -22,11 +21,22 @@ const sprite = () => {
     imgName: 'sprite.png',
     cssName: 'sprite.css'
   }))
-    // .pipe(rename("sprite.scss"))
     .pipe(gulp.dest('build/img/sprite-png'));
 }
 
 exports.sprite = sprite
+
+const images = () => {
+  return gulp.src("source/img/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.images = images;
 
 const styles = () => {
   return gulp.src('source/sass/style.scss')
@@ -53,23 +63,26 @@ exports.styles = styles
 const html = () => {
   return gulp.src('source/index.html')
     .pipe(rename('index.html'))
-    // .pipe(posthtml([include()]))
-    // .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(posthtml([include()]))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build/'))
     .pipe(sync.stream())
 }
 
 exports.html = html
 
+// JS
+
 const js = () => {
   return gulp.src('source/js/**/*.js')
-    // .pipe(posthtml([include()]))
-    // .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(minify())
     .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest('source/js'))
     .pipe(sync.stream())
 }
 
 exports.js = js
+
 // Server
 
 const server = (done) => {
@@ -97,6 +110,7 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, html, js, server, watcher
 )
+
 // Clean
 
 const clean = () => {
@@ -109,7 +123,6 @@ const copy = () => {
   return gulp.src([
     'source/fonts/**/*.{ttf,woff2}',
     'source/img/**',
-    // 'source/js/**/*.js',
     'source/*.ico'
   ], {
     base: 'source'

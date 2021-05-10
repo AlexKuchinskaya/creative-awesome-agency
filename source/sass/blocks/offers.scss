@@ -33,11 +33,15 @@
 }
 
 .offers__title {
-    font-family: "Roboto", serif;
+    font-family: "Roboto", "Arial", serif;
     font-size: 14px;
     color: $expertise-grey;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
     letter-spacing: 0;
+    &--branding,
+    &--mobile {
+        margin-bottom: 23px;
+    }
 }
 
 .offers__info {

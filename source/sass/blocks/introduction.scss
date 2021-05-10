@@ -6,7 +6,7 @@
 
     
     @media (min-width: $ipad-portrait-width) {
-        padding-top: 154px;
+        padding-top: 151px;
         padding-bottom: 0;
     }
 }
@@ -14,13 +14,15 @@
 .introduction__title {
     font-size: 32px;
     text-align: center;
-    max-width: 500px;
+    max-width: 547px;
     margin: 0 auto;
-    margin-bottom: 44px;
+    margin-bottom: 49px;
     text-transform: none;
     color: $basic-white;
     font-weight: 400;
-    letter-spacing: 1.32px;
+    letter-spacing: 0.32px;
+    font-weight: 900;
+    
 }
 
 .introduction__description {
@@ -29,7 +31,7 @@
     text-align: center;
     line-height: 1.714;
     max-width: 791px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     position: relative;
     color: $basic-white;
     letter-spacing: .7px;

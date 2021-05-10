@@ -1,16 +1,18 @@
 .video-agency {
     width: 100%;
     background: url(../img/video-bg.jpg);
-    // height: 550px;
     background-size: cover;
     background-color: $basic-violet;
     position: relative;
-    // background-size: auto 100%;
     background-position: top center;
     background-repeat: no-repeat;
     z-index: 1;
     box-sizing: border-box;
     padding: 199px 0px;
+    font-family: "Roboto","Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
 }
 
 .video-agency__button {
@@ -31,10 +33,7 @@
     display: block;
     width: 157px;
     z-index: 10;
-    font-family: "Roboto","Arial", sans-serif;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;;
+    font: inherit;
     text-align: center;
     color: $basic-white;
     margin: 0 auto;

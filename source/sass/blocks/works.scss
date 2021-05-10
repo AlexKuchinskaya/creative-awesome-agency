@@ -21,7 +21,6 @@
     display: inline-block;
     position: relative;
     color: $expertise-grey;
-    letter-spacing: .7;
     vertical-align: middle;
     min-width: 185px;
 
@@ -63,5 +62,5 @@
 }
 
 .works__title {
-    letter-spacing: 0;
+    letter-spacing: 2px;
 }

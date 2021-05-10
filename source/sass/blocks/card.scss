@@ -1,11 +1,18 @@
 .card__items {
     width: 100%;
     max-width: 220px;
+    margin: 0 auto;
+    margin-bottom: 20px; 
+
+    @media (min-width: $ipad-landscape-width) {
+        margin: 0;
+    }
 }
 
 .card__photo {
     width: 220px;
     height: 229px;
+    display: block;
 }
 
 .card__info-container {
@@ -15,19 +22,18 @@
     opacity: .5;
 }
 
-.card__member {
-    color: $basic-white;
-    font-size: 14px;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.card__position {
+.card__member, .card__position {
     color: $basic-white;
     opacity: 0.702;
-    font-size: 13px;
     text-transform: uppercase;
+    display: block;
+}
+
+.card__member {
+    font-size: 14px;
+}
+.card__position {
+    font-size: 13px;
 }
   
   

@@ -2,8 +2,11 @@
     background: url(../img/footer-background.jpg);
     background-color: $basic-violet;
     background-repeat: no-repeat;
-    // background-size: cover;
     min-height: 400px;
+
+    @media (max-width: $ipad-portrait-width) {
+        background-size: cover;
+    }
 }
 
 .page-footer__wrapper {

@@ -1,7 +1,7 @@
 .expertise {
     text-align: center;
     color: $basic-grey;
-    padding: 65px 20px 59px;
+    padding: 62px 20px 57px;
 }
 .expertise__container {
     max-width: 960px;
@@ -18,14 +18,14 @@
 .expertise__description {
     font-size: 15px;
     position: relative;
-    max-width: 401px;
+    max-width: 440px;
     padding: 0;
     margin: 0 auto;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", "Arial", serif;
     line-height: 1.2;
     text-align: center;
     margin-bottom: 65px;
-    letter-spacing: 1.05px;
+    letter-spacing: 0.4px;
 
     &::before {
         content: "";

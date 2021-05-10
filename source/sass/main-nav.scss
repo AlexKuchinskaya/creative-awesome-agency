@@ -9,6 +9,10 @@
         width: 100%;
       }
     }
+
+    @media(min-width: $ipad-landscape-width) {
+      max-width: 522px;
+    }
   }
   
   .main-nav__toggle {
@@ -101,8 +105,13 @@
   }
   
   .main-nav__wrapper {
+    box-sizing: border-box;
     @media (min-width: $ipad-portrait-width) {
       max-width: 550px;
+    }
+
+    @media(min-width: $ipad-landscape-width) {
+      max-width: 522px;
     }
   }
   
