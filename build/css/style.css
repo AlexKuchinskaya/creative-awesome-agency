@@ -711,8 +711,6 @@ body {
   color: #413d4b;
   margin-bottom: 16px;
   letter-spacing: 0; }
-  .offers__title--branding, .offers__title--mobile {
-    margin-bottom: 23px; }
 
 .offers__info {
   font-weight: 300;
@@ -723,6 +721,12 @@ body {
   max-width: 50px;
   margin: 0 auto;
   margin-bottom: 31px; }
+  .offers__picture--branding {
+    margin-bottom: 37px; }
+  .offers__picture--mobile {
+    margin-bottom: 35px; }
+  .offers__picture--love {
+    margin-bottom: 32px; }
 
 .works {
   padding-top: 65px;

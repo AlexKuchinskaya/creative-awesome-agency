@@ -38,10 +38,10 @@
     color: $expertise-grey;
     margin-bottom: 16px;
     letter-spacing: 0;
-    &--branding,
-    &--mobile {
-        margin-bottom: 23px;
-    }
+    // &--branding,
+    // &--mobile {
+    //     margin-bottom: 23px;
+    // }
 }
 
 .offers__info {
@@ -54,4 +54,13 @@
     max-width: 50px;
     margin: 0 auto;
     margin-bottom: 31px;
+    &--branding {
+        margin-bottom: 37px 
+    }
+    &--mobile {
+        margin-bottom: 35px;
+    }
+    &--love {
+        margin-bottom: 32px;
+    }
 }
