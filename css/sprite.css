@@ -18,79 +18,73 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-branding-indentity {
   background-image: url(sprite.png);
-  background-position: 0px -146px;
+  background-position: -99px 0px;
   width: 50px;
   height: 42px;
 }
 .icon-dribbble {
   background-image: url(sprite.png);
-  background-position: -234px -100px;
+  background-position: -50px -50px;
   width: 35px;
   height: 35px;
 }
 .icon-facebook {
   background-image: url(sprite.png);
-  background-position: -234px -135px;
+  background-position: -28px -96px;
   width: 35px;
   height: 35px;
 }
 .icon-game-devs {
   background-image: url(sprite.png);
-  background-position: -234px 0px;
+  background-position: -99px -42px;
   width: 41px;
   height: 50px;
 }
 .icon-gplus {
   background-image: url(sprite.png);
-  background-position: -50px -146px;
+  background-position: -63px -96px;
   width: 35px;
   height: 35px;
 }
 .icon-instagram {
   background-image: url(sprite.png);
-  background-position: -85px -146px;
+  background-position: -98px -96px;
   width: 35px;
   height: 35px;
 }
 .icon-love {
   background-image: url(sprite.png);
-  background-position: -184px -100px;
+  background-position: 0px -50px;
   width: 50px;
   height: 46px;
 }
 .icon-mobile-app {
   background-image: url(sprite.png);
-  background-position: -234px -50px;
+  background-position: 0px -96px;
   width: 28px;
   height: 50px;
 }
 .icon-optimization {
   background-image: url(sprite.png);
-  background-position: -184px 0px;
+  background-position: 0px 0px;
   width: 50px;
   height: 50px;
 }
-.icon-sprite {
-  background-image: url(sprite.png);
-  background-position: 0px 0px;
-  width: 184px;
-  height: 146px;
-}
 .icon-twitter {
   background-image: url(sprite.png);
-  background-position: -120px -146px;
+  background-position: -149px 0px;
   width: 35px;
   height: 35px;
 }
 .icon-web-design {
   background-image: url(sprite.png);
-  background-position: -184px -50px;
+  background-position: -50px 0px;
   width: 49px;
   height: 50px;
 }
 .icon-youtube {
   background-image: url(sprite.png);
-  background-position: -155px -146px;
+  background-position: -149px -35px;
   width: 35px;
   height: 35px;
 }

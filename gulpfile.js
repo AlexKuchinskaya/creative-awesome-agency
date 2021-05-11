@@ -16,6 +16,8 @@ const spritesmith = require('gulp.spritesmith');
  
 const sprite = () => {
   return gulp.src('img/sprite-png/*.png')
+    .pipe(plumber())
+    .pipe(sourcemap.init())
     .pipe(spritesmith({
     imgName: 'sprite.png',
     cssName: 'sprite.css'
