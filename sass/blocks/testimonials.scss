@@ -48,10 +48,10 @@
 }
   
 .testimonials__name, .testimonials__position {
+    font-family: "Roboto", "Arial", sans-serif;
     display: block;
     text-align: center;
     color: $basic-white;
-    font: inherit;
     text-transform: uppercase;
 }
 

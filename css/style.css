@@ -875,10 +875,10 @@ body {
   letter-spacing: .4px; }
 
 .testimonials__name, .testimonials__position {
+  font-family: "Roboto", "Arial", sans-serif;
   display: block;
   text-align: center;
   color: #FFFFFF;
-  font: inherit;
   text-transform: uppercase; }
 
 .testimonials__name {

@@ -21,7 +21,8 @@ const sprite = () => {
     imgName: 'sprite.png',
     cssName: 'sprite.css'
   }))
-    .pipe(gulp.dest('build/img/sprite-png'));
+    .pipe(gulp.dest('img/sprite-png'))
+    .pipe(gulp.dest('build/img/sprite-png'))
 }
 
 exports.sprite = sprite
