@@ -13,7 +13,6 @@ const posthtml = require('gulp-posthtml')
 const include = require('posthtml-include')
 const htmlmin = require('gulp-htmlmin')
 const spritesmith = require('gulp.spritesmith');
-const minify = require('gulp-minify');
  
 const sprite = () => {
   return gulp.src('img/sprite-png/*.png')
@@ -21,8 +20,8 @@ const sprite = () => {
     imgName: 'sprite.png',
     cssName: 'sprite.css'
   }))
-    .pipe(gulp.dest('img/sprite-png'))
-    .pipe(gulp.dest('build/img/sprite-png'))
+    .pipe(gulp.dest('css'))
+    .pipe(gulp.dest('build/css'))
 }
 
 exports.sprite = sprite
@@ -75,9 +74,7 @@ exports.html = html
 
 const js = () => {
   return gulp.src('js/**/*.js')
-    .pipe(minify())
     .pipe(gulp.dest('build/js'))
-    .pipe(gulp.dest('js'))
     .pipe(sync.stream())
 }
 
